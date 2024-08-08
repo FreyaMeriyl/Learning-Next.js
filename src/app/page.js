@@ -1,5 +1,10 @@
 import Image from "next/image";
 
+/*If I replace 'p-24' with 'p-25' padding doesn't work.
+This is because tailwind has predefined padding classes
+and this specific p-25 is not included in it.
+But if I change it to p-20 or p-16,etc, padding will work*/
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
