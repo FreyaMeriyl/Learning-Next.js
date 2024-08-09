@@ -1,20 +1,20 @@
 import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
+import img1 from "/public/img1.png"
 
 function Footer() {
   return (
-    <footer className=" footerbg-white p-4 text-center">
-      <Link href="/">
-        <button className="m-2 p-2 text-gray-800 rounded hover:text-blue-900">Home</button>
-      </Link>
+    <footer className="bg-white w-full flex justify-between items-center">
+      <div className="flex items-center">
+        <Image src={img1} alt='logo' width={50} height={100} className='h-10'/>
+      </div>
+      <div className="flex justify-center">
 
-      <Link href="/products">
-        <button className="m-2 p-2 text-gray-800 rounded hover:text-blue-900">Products</button>
-      </Link>
-
-      <Link href="/about">
-        <button className="m-2 p-2 text-gray-800 rounded hover:text-blue-900">About</button>
-      </Link>
+        <Link href="/products">
+          <button className="m-2 p-2 text-gray-800 rounded hover:text-blue-900">Shop Now</button>
+        </Link>
+      </div>
     </footer>
   );
 }

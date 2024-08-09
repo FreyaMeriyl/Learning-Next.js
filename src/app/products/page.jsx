@@ -8,7 +8,6 @@ const page = () => {
         <p className="mb-4 text-gray-700 text-justify">
             This page contains the products that includes the image,
             price and a short description of the product.
-            <img src='./images/img4' width="800" height="1000" />
         </p>
     </div>
     </div>
