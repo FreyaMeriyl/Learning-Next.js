@@ -5,6 +5,7 @@ and this specific p-25 is not included in it.
 But if I change it to p-20 or p-16,etc, padding will work*/
 
 import React from 'react'
+import Button from '@/components/button';
 
 const Page = () => {
   return (
@@ -19,11 +20,12 @@ const Page = () => {
           I am interested in design, learning new things, and exploring new ideas.
         </p>
         
-        <p className="text-gray-700 text-justify">
+        <p className="text-gray-700 text-justify mb-7">
           Being in Sceptix has taught me a lot that I couldn’t have learned on my own. The project
           work last semester with the web team, led by Pranav, was especially helpful—I got to learn
           React and Supabase, which was a great experience.
         </p>
+        <Button />
       </div>
     </div>
   )
