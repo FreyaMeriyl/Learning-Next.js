@@ -6,6 +6,7 @@ But if I change it to p-20 or p-16,etc, padding will work*/
 
 import React from 'react'
 import Button from '@/app/components/button';
+import Footer from './components/Footer';
 
 const page = () => {
   return (
@@ -35,6 +36,7 @@ const page = () => {
         <img src='./images/img3' width="500" height="300" />
       </p>
       <Button/>
+      <Footer/>
     </div>
     </div>
   )
