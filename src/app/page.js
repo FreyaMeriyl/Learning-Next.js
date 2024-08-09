@@ -5,30 +5,39 @@ and this specific p-25 is not included in it.
 But if I change it to p-20 or p-16,etc, padding will work*/
 
 import React from 'react'
-import Button from '@/components/button';
+import Button from '@/app/components/button';
 
-const Page = () => {
+const page = () => {
   return (
-    <div className="min-h-screen bg-green-100 flex items-center justify-center">
-      <div className="bg-white p-12 shadow-md max-w-lg">
+    <div className="min-h-screen bg-blue-100 flex items-center justify-center">
+    <div className="bg-white p-12 shadow-md">
+      <h1 className="text-3xl font-bold mb-4 text-gray-700">E-commerce Home Page</h1>
+      <p className="mb-4 text-gray-700 text-justify">
+        The header or the top part of the page includes a logo, 
+        navigation bar and a hero section which highlights special 
+        offers and new products.
+        <img src="./images/img1" width="500" height="400" />
+      </p>
+      <p className="mb-4 text-gray-700 text-justify">
+        The next part contains the link that takes you to the product 
+        page
+        <img src='./images/img2' width="500" height="300" />
 
-        <h1 className="text-3xl font-semibold text-gray-800 mb-4">Meriyl Freya Sequeira</h1>
-
-        <p className="text-gray-700 mb-4">Student at SJEC studying CSDS.</p>
-       
-        <p className="text-gray-700 mb-4 text-justify">
-          I am interested in design, learning new things, and exploring new ideas.
-        </p>
-        
-        <p className="text-gray-700 text-justify mb-7">
-          Being in Sceptix has taught me a lot that I couldn’t have learned on my own. The project
-          work last semester with the web team, led by Pranav, was especially helpful—I got to learn
-          React and Supabase, which was a great experience.
-        </p>
-        <Button />
-      </div>
+      </p>
+      <p className="mb-4 text-gray-700 text-justify">
+        Next contains the customer reviews or testimonials who have 
+        bought products which will help new customers see what others 
+        think of the store and its items.
+      </p>
+      <p className="mb-4 text-gray-700 text-justify">
+        The footer or the bottom part of this page contains contact info,
+        newsletter signups, etc.
+        <img src='./images/img3' width="500" height="300" />
+      </p>
+      <Button/>
+    </div>
     </div>
   )
 }
 
-export default Page
+export default page
