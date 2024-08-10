@@ -12,7 +12,15 @@ function Footer() {
       <div className="flex justify-center">
 
         <Link href="/products">
-          <button className="m-2 p-2 text-gray-800 rounded hover:text-blue-900">Shop Now</button>
+          <button className="m-2 p-2 text-gray-800 rounded hover:text-blue-900">Shop</button>
+        </Link>
+
+        <Link href="/">
+          <button className="m-2 p-2 text-gray-800 rounded hover:text-blue-900">Newsletter</button>
+        </Link>
+
+        <Link href="/">
+          <button className="m-2 p-2 text-gray-800 rounded hover:text-blue-900">FAQ'S</button>
         </Link>
       </div>
     </footer>
